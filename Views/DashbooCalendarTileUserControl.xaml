@@ -6,8 +6,8 @@
              xmlns:local="clr-namespace:DashbooCalendar.Views"
              mc:Ignorable="d" 
              d:DesignHeight="130" d:DesignWidth="100"
-             MinHeight="130" MinWidth="100">
-    <Grid Background="#FFC5C5C5">
+             MinHeight="180" MinWidth="150">
+    <Grid Background="#FFC3C3C3">
         <Grid.ColumnDefinitions>
             <ColumnDefinition MinWidth="45" Width="0.45*"></ColumnDefinition>
             <ColumnDefinition MinWidth="55" Width="0.55*"></ColumnDefinition>
@@ -17,13 +17,13 @@
             <RowDefinition MinHeight="78" Height="0.6*"></RowDefinition>
         </Grid.RowDefinitions>
 
-        <Grid Grid.Column="0" Grid.Row="0" Background="#FF888888">
+        <Grid Grid.Column="0" Grid.Row="0" Background="#FF4B6DD3">
             <Label Background="Transparent" FontSize="35" FontWeight="Bold" FontFamily="Arial"
-                   HorizontalAlignment="Center" VerticalAlignment="Center">1</Label>
+                   HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#FFE5E0E0">1</Label>
         </Grid>
 
         <Grid Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2">
-            <TextBlock Margin="5 15" FontFamily="CenturyGothic" FontWeight="Bold" FontSize="20"> 2 Events</TextBlock>
+            <TextBlock Margin="15 20" FontFamily="CenturyGothic" FontWeight="Bold" FontSize="25"> 2 Events</TextBlock>
         </Grid>
     </Grid>
 </UserControl>
