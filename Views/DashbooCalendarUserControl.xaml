@@ -5,12 +5,15 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:DashbooCalendar.Views"
              mc:Ignorable="d" 
-             d:DesignHeight="1080" d:DesignWidth="1080">
+             d:DesignHeight="1140" d:DesignWidth="1080">
     <Grid Background="#FFA9A6A6">
         <Grid.RowDefinitions>
             <RowDefinition Height="100" MinHeight="100"></RowDefinition>
-            <RowDefinition Height="20" MinHeight="20" MaxHeight="20"></RowDefinition>
+            <RowDefinition Height="10" MinHeight="10" MaxHeight="10"></RowDefinition>
             <RowDefinition Height="50" MinHeight="50"></RowDefinition>
+            <RowDefinition Height="10" MinHeight="10" MaxHeight="10"></RowDefinition>
+            <RowDefinition Height="50" MinHeight="50"></RowDefinition>
+            <RowDefinition Height="10" MinHeight="10" MaxHeight="10"></RowDefinition>
             <RowDefinition Height="910" MinHeight="900"></RowDefinition>
         </Grid.RowDefinitions>
 
@@ -23,7 +26,14 @@
             <Label Background="#FF595959"></Label>
         </Grid>
 
-        <Grid Grid.Row="2" Margin="10 5">
+        <Label Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="35 0 0 0" FontFamily="CenturyGothic" Background="Transparent"
+               FontWeight="Bold" FontSize="30">Thursday, 14 of April</Label>
+        
+        <Grid Grid.Row="3">
+            <Label Background="#FF595959"></Label>
+        </Grid>
+
+        <Grid Grid.Row="4" Margin="10 5">
             <Grid.Resources>
                 <Style TargetType="{x:Type Label}">
                     <Setter Property="HorizontalAlignment" Value="Center"></Setter>
@@ -56,7 +66,11 @@
             <Label Grid.Column="6">SUN</Label>
         </Grid>
 
-        <Grid Grid.Row="3" Margin="10 5">
+        <Grid Grid.Row="5">
+            <Label Background="#FF595959"></Label>
+        </Grid>
+
+        <Grid Grid.Row="6" Margin="10 0 10 0">
             <Grid.Resources>
                 <Style TargetType="ColumnDefinition">
                     <Setter Property="MinWidth" Value="150"></Setter>
