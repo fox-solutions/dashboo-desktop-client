@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace DashbooCalendar.Models
 {
-    class DashbooCalendar
+    public class Calendar
     {
         public DateTime Today { get; private set; }
 
-        public string[] ShortDayNames { get; set; }
+        public string[] ShortDayNames { get; private set; }
 
         private string monthName;
 
@@ -35,7 +35,7 @@ namespace DashbooCalendar.Models
             }
         }
 
-        public DashbooCalendar()
+        public Calendar()
         {
             Today = DateTime.Now;
             DashbooTiles = new List<DashbooTile>();
@@ -43,7 +43,7 @@ namespace DashbooCalendar.Models
 
             for(int i=0; i<7; i++)
             {
-                ShortDayNames[i] = ((DayOfWeek)i).ToString();
+                ShortDayNames[i] = CultureInfo.CurrentCulture.DateTimeFormat.GetShortestDayName((DayOfWeek)i);
             }
         }
     }
