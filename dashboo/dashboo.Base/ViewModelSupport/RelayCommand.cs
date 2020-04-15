@@ -12,11 +12,16 @@ namespace dashboo.Base.ViewModelSupport
 
         public event EventHandler CanExecuteChanged = delegate { };
 
+        public RelayCommand(Action<object> execute, Predicate<object> canExecute)
+        {
+            this.execute = execute;
+            this.canExecute = canExecute;
+        }
+
         public void OnCanExecuteChanged()
         {
             CanExecuteChanged(this, EventArgs.Empty);
         }
-
 
         public bool CanExecute(object parameter)
         {
