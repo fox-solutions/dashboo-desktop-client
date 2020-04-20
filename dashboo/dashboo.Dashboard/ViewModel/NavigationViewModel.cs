@@ -1,7 +1,5 @@
-﻿using dashboo.Base.ViewModelSupport.ViewModel;
+﻿using dashboo.Base.ViewModel;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace dashboo.Dashboard.ViewModel
 {
