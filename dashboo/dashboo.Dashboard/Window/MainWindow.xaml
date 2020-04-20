@@ -11,6 +11,10 @@
         Width="800"
         WindowStartupLocation="CenterScreen">
 
+    <Window.Resources>
+        <ResourceDictionary Source="../Style/Styles.xaml"/>
+    </Window.Resources>
+
     <Window.DataContext>
         <viewModel:MainViewModel/>
     </Window.DataContext>
