@@ -1,7 +1,7 @@
 ﻿using System;
 using static System.Net.Mime.MediaTypeNames;
 
-namespace dashboo.Base.Model
+namespace dashboo.Common.Model
 {
 	public class Event
     {

@@ -4,7 +4,7 @@ using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Text;
 
-namespace dashboo.Base.ViewModel
+namespace dashboo.Common.ViewModel
 {
     public abstract class BaseViewModel : INotifyPropertyChanged
     {

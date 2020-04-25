@@ -1,4 +1,4 @@
-﻿using dashboo.Base.ViewModel;
+﻿using dashboo.Common.ViewModel;
 using System;
 
 namespace dashboo.Dashboard.ViewModel
