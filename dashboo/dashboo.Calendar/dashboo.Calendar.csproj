@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\dashboo.Base\dashboo.Base.csproj" />
+    <ProjectReference Include="..\dashboo.Base\dashboo.Common.csproj" />
   </ItemGroup>
 
 </Project>
