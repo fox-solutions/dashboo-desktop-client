@@ -6,8 +6,8 @@
              xmlns:local="clr-namespace:dashboo.Calendar.View"
              xmlns:viewModel="clr-namespace:dashboo.Calendar.ViewModel"
              mc:Ignorable="d"
-             d:DesignHeight="450"
-             d:DesignWidth="800">
+             d:DesignHeight="1000"
+             d:DesignWidth="1050">
 
     <UserControl.Resources>
         <ResourceDictionary>
@@ -18,5 +18,86 @@
     <UserControl.DataContext>
         <viewModel:CalendarViewModel/>
     </UserControl.DataContext>
+
+    <Grid Background="#2f2f2f">
+        <Grid.RowDefinitions>
+            <RowDefinition MinHeight="125" Height="125"></RowDefinition>
+            <RowDefinition MinHeight="75" Height="75"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <Grid.Resources>
+                <Style TargetType="{x:Type Label}">
+                    <Setter Property="Foreground" Value="#d8d8d8"></Setter>
+                    <Setter Property="FontFamily" Value="Roboto"></Setter>
+                    <Setter Property="FontSize"   Value="50"></Setter>
+                    <Setter Property="FontWeight" Value="SemiBold"></Setter>
+                    <Setter Property="VerticalAlignment" Value="Center"></Setter>
+                    <Setter Property="HorizontalAlignment" Value="Center"></Setter>
+                </Style>
+            </Grid.Resources>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            
+            <Label Grid.Column="1">June 2020</Label>
+            <StackPanel Grid.Column="0" Orientation="Horizontal" Margin="25 20 50 25">
+                <StackPanel.Resources>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Width" Value="100"></Setter>
+                        <Setter Property="Height" Value="75"></Setter>
+                        <Setter Property="FontSize" Value="40"></Setter>
+                        <Setter Property="FontFamily" Value="Roboto"></Setter>
+                        <Setter Property="Background" Value="#2f2f2f"></Setter>
+                        <Setter Property="Foreground" Value="#ffffff"></Setter>
+                        <Setter Property="BorderBrush" Value="#78387b"></Setter>
+                        <Setter Property="BorderThickness" Value="3"></Setter>
+                    </Style>
+                </StackPanel.Resources>
+                <Button Margin="0 0 10 0" Content="&lt;"></Button>
+                <Button Margin="0 0 10 0" Content="&gt;"></Button>
+            </StackPanel> 
+        </Grid>
+
+        <Grid Grid.Row="1" Background="#262626">
+            <Grid.Resources>
+                <Style TargetType="{x:Type Label}">
+                    <Setter Property="Foreground" Value="#d8d8d8"></Setter>
+                    <Setter Property="FontFamily" Value="Roboto"></Setter>
+                    <Setter Property="FontSize"   Value="30"></Setter>
+                    <Setter Property="FontWeight" Value="SemiBold"></Setter>
+                    <Setter Property="VerticalAlignment" Value="Center"></Setter>
+                    <Setter Property="HorizontalAlignment" Value="Center"></Setter>
+                </Style>
+            </Grid.Resources>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition MinWidth="150"></ColumnDefinition>
+                <ColumnDefinition MinWidth="150"></ColumnDefinition>
+                <ColumnDefinition MinWidth="150"></ColumnDefinition>
+                <ColumnDefinition MinWidth="150"></ColumnDefinition>
+                <ColumnDefinition MinWidth="150"></ColumnDefinition>
+                <ColumnDefinition MinWidth="150"></ColumnDefinition>
+                <ColumnDefinition MinWidth="150"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            
+            <Label Grid.Column="0">MON</Label>
+            <Label Grid.Column="1">TUE</Label>
+            <Label Grid.Column="2">WED</Label>
+            <Label Grid.Column="3">THU</Label>
+            <Label Grid.Column="4">FRI</Label>
+            <Label Grid.Column="5">SAT</Label>
+            <Label Grid.Column="6">SUN</Label>
+        </Grid>
+        <ItemsControl Grid.Row="2">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel></WrapPanel>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+        </ItemsControl>
+    </Grid>
 
 </UserControl>
