@@ -1,4 +1,4 @@
-﻿using dashboo.Base.Model;
+﻿using dashboo.Common.Model;
 using System.Collections.ObjectModel;
 
 namespace dashboo.Calendar.ViewModel

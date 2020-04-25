@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\dashboo.Base\dashboo.Base.csproj" />
     <ProjectReference Include="..\dashboo.Calendar\dashboo.Calendar.csproj" />
   </ItemGroup>
 
