@@ -11,7 +11,9 @@
 
     <UserControl.Resources>
         <ResourceDictionary>
-            <ResourceDictionary x:Key="Template" Source="/Template/Templates.xaml"/>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="./Template/Templates.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </UserControl.Resources>
 
@@ -82,7 +84,7 @@
                 <ColumnDefinition MinWidth="150"></ColumnDefinition>
                 <ColumnDefinition MinWidth="150"></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            
+
             <Label Grid.Column="0">MON</Label>
             <Label Grid.Column="1">TUE</Label>
             <Label Grid.Column="2">WED</Label>
@@ -91,7 +93,7 @@
             <Label Grid.Column="5">SAT</Label>
             <Label Grid.Column="6">SUN</Label>
         </Grid>
-        <ItemsControl Grid.Row="2">
+        <ItemsControl Grid.Row="2" ItemTemplate="{StaticResource TileDefaultTemplate}" ItemsSource="{Binding Tiles}">
             <ItemsControl.ItemsPanel>
                 <ItemsPanelTemplate>
                     <WrapPanel></WrapPanel>

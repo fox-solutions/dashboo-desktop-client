@@ -5,10 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:dashboo.Dashboard"
         xmlns:viewModel="clr-namespace:dashboo.Dashboard.ViewModel"
+        xmlns:calendar="clr-namespace:dashboo.Calendar.View;assembly=dashboo.Calendar"
         mc:Ignorable="d"
         Title="{Binding Title}"
-        Height="450"
-        Width="800"
+        Height="1000"
+        Width="1050"
         WindowStartupLocation="CenterScreen">
 
     <Window.Resources>
@@ -18,5 +19,10 @@
     <Window.DataContext>
         <viewModel:MainViewModel/>
     </Window.DataContext>
+
+    <Grid>
+        <calendar:CalendarView></calendar:CalendarView>
+    </Grid>
+    
 
 </Window>
