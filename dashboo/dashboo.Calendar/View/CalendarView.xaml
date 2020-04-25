@@ -9,6 +9,12 @@
              d:DesignHeight="450"
              d:DesignWidth="800">
 
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary x:Key="Template" Source="/Template/Templates.xaml"/>
+        </ResourceDictionary>
+    </UserControl.Resources>
+
     <UserControl.DataContext>
         <viewModel:CalendarViewModel/>
     </UserControl.DataContext>
