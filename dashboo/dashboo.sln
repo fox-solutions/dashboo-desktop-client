@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29926.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dashboo.Dashboard", "dashboo.Dashboard\dashboo.Dashboard.csproj", "{CABBCD18-6484-4029-86CA-B755F07CDA25}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dashboo.Dashboard", "dashboo.Dashboard\dashboo.Dashboard.csproj", "{CABBCD18-6484-4029-86CA-B755F07CDA25}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dashboo.Calendar", "dashboo.Calendar\dashboo.Calendar.csproj", "{7082D33B-612C-4F9E-B6A3-A6332D4EB603}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dashboo.Calendar", "dashboo.Calendar\dashboo.Calendar.csproj", "{7082D33B-612C-4F9E-B6A3-A6332D4EB603}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dashboo.Common", "dashboo.Base\dashboo.Common.csproj", "{69D19EEC-F396-4C29-90D7-BF8E906933EA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dashboo.Base", "dashboo.Base\dashboo.Base.csproj", "{69D19EEC-F396-4C29-90D7-BF8E906933EA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

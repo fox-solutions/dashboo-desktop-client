@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Globalization;
 
-namespace dashboo.Common.Model
+namespace dashboo.Base.Model
 {
     public class Tile
     {
