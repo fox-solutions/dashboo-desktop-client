@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:dashboo.Calendar.View"
              xmlns:viewModel="clr-namespace:dashboo.Calendar.ViewModel"
              mc:Ignorable="d"
-             d:DesignHeight="1000"
+             d:DesignHeight="800"
              d:DesignWidth="1050">
 
     <UserControl.Resources>
@@ -23,8 +23,8 @@
 
     <Grid Background="#2f2f2f">
         <Grid.RowDefinitions>
-            <RowDefinition MinHeight="125" Height="125"></RowDefinition>
             <RowDefinition MinHeight="75" Height="75"></RowDefinition>
+            <RowDefinition MinHeight="40" Height="40"></RowDefinition>
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
 
@@ -33,7 +33,7 @@
                 <Style TargetType="{x:Type Label}">
                     <Setter Property="Foreground" Value="#d8d8d8"></Setter>
                     <Setter Property="FontFamily" Value="Roboto"></Setter>
-                    <Setter Property="FontSize"   Value="50"></Setter>
+                    <Setter Property="FontSize"   Value="30"></Setter>
                     <Setter Property="FontWeight" Value="SemiBold"></Setter>
                     <Setter Property="VerticalAlignment" Value="Center"></Setter>
                     <Setter Property="HorizontalAlignment" Value="Center"></Setter>
@@ -49,14 +49,15 @@
             <StackPanel Grid.Column="0" Orientation="Horizontal" Margin="25 20 50 25">
                 <StackPanel.Resources>
                     <Style TargetType="{x:Type Button}">
-                        <Setter Property="Width" Value="100"></Setter>
-                        <Setter Property="Height" Value="75"></Setter>
-                        <Setter Property="FontSize" Value="40"></Setter>
+                        <Setter Property="Width" Value="40"></Setter>
+                        <Setter Property="Height" Value="30"></Setter>
+                        <Setter Property="FontSize" Value="20"></Setter>
                         <Setter Property="FontFamily" Value="Roboto"></Setter>
+                        <Setter Property="FontWeight" Value="SemiBold"></Setter>
                         <Setter Property="Background" Value="#2f2f2f"></Setter>
                         <Setter Property="Foreground" Value="#ffffff"></Setter>
                         <Setter Property="BorderBrush" Value="#78387b"></Setter>
-                        <Setter Property="BorderThickness" Value="3"></Setter>
+                        <Setter Property="BorderThickness" Value="2"></Setter>
                     </Style>
                 </StackPanel.Resources>
                 <Button Margin="0 0 10 0" Content="&lt;"></Button>
@@ -69,7 +70,7 @@
                 <Style TargetType="{x:Type Label}">
                     <Setter Property="Foreground" Value="#d8d8d8"></Setter>
                     <Setter Property="FontFamily" Value="Roboto"></Setter>
-                    <Setter Property="FontSize"   Value="30"></Setter>
+                    <Setter Property="FontSize"   Value="20"></Setter>
                     <Setter Property="FontWeight" Value="SemiBold"></Setter>
                     <Setter Property="VerticalAlignment" Value="Center"></Setter>
                     <Setter Property="HorizontalAlignment" Value="Center"></Setter>

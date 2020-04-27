@@ -8,8 +8,11 @@
         xmlns:calendar="clr-namespace:dashboo.Calendar.View;assembly=dashboo.Calendar"
         mc:Ignorable="d"
         Title="{Binding Title}"
-        Height="1000"
+        Height="800"
         Width="1050"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        ResizeMode="CanResizeWithGrip"
         WindowStartupLocation="CenterScreen">
 
     <Window.Resources>
