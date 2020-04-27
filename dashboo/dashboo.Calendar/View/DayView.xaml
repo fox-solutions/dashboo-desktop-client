@@ -5,11 +5,11 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:dashboo.Calendar.View"
              mc:Ignorable="d" 
-             d:DesignHeight="1000"
-             d:DesignWidth="1050">
+             d:DesignHeight="800"
+             d:DesignWidth="959">
     <Grid Background="#2f2f2f">
         <Grid.RowDefinitions>
-            <RowDefinition MinHeight="125" Height="125"></RowDefinition>
+            <RowDefinition MinHeight="75" Height="75"></RowDefinition>
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
 
@@ -18,29 +18,31 @@
                 <Style TargetType="{x:Type Label}">
                     <Setter Property="Foreground" Value="#d8d8d8"></Setter>
                     <Setter Property="FontFamily" Value="Roboto"></Setter>
-                    <Setter Property="FontSize"   Value="50"></Setter>
+                    <Setter Property="FontSize"   Value="25"></Setter>
                     <Setter Property="FontWeight" Value="SemiBold"></Setter>
                     <Setter Property="VerticalAlignment" Value="Center"></Setter>
-                    <Setter Property="HorizontalAlignment" Value="left"></Setter>
+                    <Setter Property="HorizontalAlignment" Value="Center"></Setter>
                 </Style>
             </Grid.Resources>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="1*"></ColumnDefinition>
-                <ColumnDefinition Width="2*"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
             </Grid.ColumnDefinitions>
 
             <Label Grid.Column="1">Monday, 28 of June</Label>
             <StackPanel Grid.Column="0" Orientation="Horizontal" Margin="25 20 50 25">
                 <StackPanel.Resources>
                     <Style TargetType="{x:Type Button}">
-                        <Setter Property="Width" Value="100"></Setter>
-                        <Setter Property="Height" Value="75"></Setter>
-                        <Setter Property="FontSize" Value="40"></Setter>
+                        <Setter Property="Width" Value="40"></Setter>
+                        <Setter Property="Height" Value="30"></Setter>
+                        <Setter Property="FontSize" Value="20"></Setter>
                         <Setter Property="FontFamily" Value="Roboto"></Setter>
+                        <Setter Property="FontWeight" Value="SemiBold"></Setter>
                         <Setter Property="Background" Value="#2f2f2f"></Setter>
                         <Setter Property="Foreground" Value="#ffffff"></Setter>
-                        <Setter Property="BorderBrush" Value="#78387b"></Setter>
-                        <Setter Property="BorderThickness" Value="3"></Setter>
+                        <Setter Property="BorderBrush" Value="#7358ad"></Setter>
+                        <Setter Property="BorderThickness" Value="2"></Setter>
                     </Style>
                 </StackPanel.Resources>
                 <Button Margin="0 0 10 0" Content="&lt;"></Button>
@@ -48,13 +50,9 @@
             </StackPanel>
         </Grid>
 
-        <Grid Grid.Row="1">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition Width="20"></ColumnDefinition>
-            </Grid.ColumnDefinitions>
+        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Visible">
+            
+        </ScrollViewer>
 
-            <ScrollBar Grid.Column="1"></ScrollBar>
-        </Grid>
     </Grid>
 </UserControl>

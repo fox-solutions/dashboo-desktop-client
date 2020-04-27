@@ -4,6 +4,7 @@
 
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="TileDefaultTemplate.xaml"/>
+        <ResourceDictionary Source="AgendaTileTemplate.xaml"/>
     </ResourceDictionary.MergedDictionaries>
 
 </ResourceDictionary>

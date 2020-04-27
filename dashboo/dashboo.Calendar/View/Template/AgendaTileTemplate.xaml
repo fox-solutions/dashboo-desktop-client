@@ -1,0 +1,45 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:dashboo.Calendar.View.Template">
+
+    <DataTemplate x:Key="AgendaTileTemplate">
+        <Grid MinHeight="40" MinWidth="40" Background="#2f2f2f">
+            <Grid.Resources>
+                <Style TargetType="{x:Type Label}">
+                    <Setter Property="Foreground" Value="#d8d8d8"></Setter>
+                    <Setter Property="FontFamily" Value="Roboto"></Setter>
+                    <Setter Property="FontSize"   Value="25"></Setter>
+                    <Setter Property="FontWeight" Value="SemiBold"></Setter>
+                    <Setter Property="VerticalAlignment" Value="Center"></Setter>
+                    <Setter Property="HorizontalAlignment" Value="Center"></Setter>
+                </Style>
+            </Grid.Resources>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition MinWidth="40" Width="40"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="0" Background="#7358ad">
+                <Label>1</Label>
+            </Grid>
+            <Button Grid.Column="1" Background="Transparent">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Label}">
+                        <Setter Property="Foreground" Value="#d8d8d8"></Setter>
+                        <Setter Property="MinWidth"   Value="900"></Setter>
+                        <Setter Property="FontFamily" Value="Roboto"></Setter>
+                        <Setter Property="FontSize"   Value="18"></Setter>
+                        <Setter Property="FontWeight" Value="SemiBold"></Setter>
+                        <Setter Property="VerticalAlignment" Value="Center"></Setter>
+                        <Setter Property="HorizontalAlignment" Value="Left"></Setter>
+                    </Style>
+                </Button.Resources>
+                <Label Content="{Binding Title}"></Label>
+            </Button>
+        </Grid>
+    </DataTemplate>
+    
+</ResourceDictionary>
+
+
+    
