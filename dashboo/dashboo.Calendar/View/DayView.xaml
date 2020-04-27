@@ -7,6 +7,15 @@
              mc:Ignorable="d" 
              d:DesignHeight="800"
              d:DesignWidth="959">
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="./Template/Templates.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    
     <Grid Background="#2f2f2f">
         <Grid.RowDefinitions>
             <RowDefinition MinHeight="75" Height="75"></RowDefinition>
@@ -51,7 +60,13 @@
         </Grid>
 
         <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Visible">
-            
+            <ItemsControl Grid.Row="2" ItemTemplate="{DynamicResource AgendaTileTemplate}">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <StackPanel></StackPanel>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+            </ItemsControl>
         </ScrollViewer>
 
     </Grid>
