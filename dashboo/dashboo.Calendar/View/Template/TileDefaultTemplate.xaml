@@ -3,8 +3,8 @@
                     xmlns:local="clr-namespace:dashboo.Calendar.View.Template">
     
     <DataTemplate x:Key="TileDefaultTemplate">
-        <Button MinWidth="150" MinHeight="150" Background="Transparent">
-            <Grid  MinWidth="150" MinHeight="150" Background="#2c2c2c">
+        <Button MinWidth="137" MinHeight="137" Background="Transparent">
+            <Grid  MinWidth="137" MinHeight="137" Background="#2c2c2c">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="1*"></ColumnDefinition>
                     <ColumnDefinition Width="3*"></ColumnDefinition>

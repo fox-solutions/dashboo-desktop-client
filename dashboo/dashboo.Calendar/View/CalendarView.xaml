@@ -7,7 +7,7 @@
              xmlns:viewModel="clr-namespace:dashboo.Calendar.ViewModel"
              mc:Ignorable="d"
              d:DesignHeight="800"
-             d:DesignWidth="1050">
+             d:DesignWidth="959">
 
     <UserControl.Resources>
         <ResourceDictionary>
@@ -33,7 +33,7 @@
                 <Style TargetType="{x:Type Label}">
                     <Setter Property="Foreground" Value="#d8d8d8"></Setter>
                     <Setter Property="FontFamily" Value="Roboto"></Setter>
-                    <Setter Property="FontSize"   Value="30"></Setter>
+                    <Setter Property="FontSize"   Value="25"></Setter>
                     <Setter Property="FontWeight" Value="SemiBold"></Setter>
                     <Setter Property="VerticalAlignment" Value="Center"></Setter>
                     <Setter Property="HorizontalAlignment" Value="Center"></Setter>
@@ -56,7 +56,7 @@
                         <Setter Property="FontWeight" Value="SemiBold"></Setter>
                         <Setter Property="Background" Value="#2f2f2f"></Setter>
                         <Setter Property="Foreground" Value="#ffffff"></Setter>
-                        <Setter Property="BorderBrush" Value="#78387b"></Setter>
+                        <Setter Property="BorderBrush" Value="#7358ad"></Setter>
                         <Setter Property="BorderThickness" Value="2"></Setter>
                     </Style>
                 </StackPanel.Resources>
@@ -70,20 +70,20 @@
                 <Style TargetType="{x:Type Label}">
                     <Setter Property="Foreground" Value="#d8d8d8"></Setter>
                     <Setter Property="FontFamily" Value="Roboto"></Setter>
-                    <Setter Property="FontSize"   Value="20"></Setter>
+                    <Setter Property="FontSize"   Value="18"></Setter>
                     <Setter Property="FontWeight" Value="SemiBold"></Setter>
                     <Setter Property="VerticalAlignment" Value="Center"></Setter>
                     <Setter Property="HorizontalAlignment" Value="Center"></Setter>
                 </Style>
             </Grid.Resources>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition MinWidth="150"></ColumnDefinition>
-                <ColumnDefinition MinWidth="150"></ColumnDefinition>
-                <ColumnDefinition MinWidth="150"></ColumnDefinition>
-                <ColumnDefinition MinWidth="150"></ColumnDefinition>
-                <ColumnDefinition MinWidth="150"></ColumnDefinition>
-                <ColumnDefinition MinWidth="150"></ColumnDefinition>
-                <ColumnDefinition MinWidth="150"></ColumnDefinition>
+                <ColumnDefinition MinWidth="137"></ColumnDefinition>
+                <ColumnDefinition MinWidth="137"></ColumnDefinition>
+                <ColumnDefinition MinWidth="137"></ColumnDefinition>
+                <ColumnDefinition MinWidth="137"></ColumnDefinition>
+                <ColumnDefinition MinWidth="137"></ColumnDefinition>
+                <ColumnDefinition MinWidth="137"></ColumnDefinition>
+                <ColumnDefinition MinWidth="137"></ColumnDefinition>
             </Grid.ColumnDefinitions>
 
             <Label Grid.Column="0">MON</Label>
