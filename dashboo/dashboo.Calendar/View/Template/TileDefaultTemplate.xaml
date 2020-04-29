@@ -3,8 +3,8 @@
                     xmlns:local="clr-namespace:dashboo.Calendar.View.Template">
     
     <DataTemplate x:Key="TileDefaultTemplate">
-        <Button MinWidth="137" MinHeight="137" Background="Transparent">
-            <Grid  MinWidth="137" MinHeight="137" Background="#2c2c2c">
+        <Button MinWidth="137" MinHeight="114" Background="Transparent">
+            <Grid  MinWidth="137" MinHeight="114" Background="#2c2c2c">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="1*"></ColumnDefinition>
                     <ColumnDefinition Width="3*"></ColumnDefinition>
@@ -13,16 +13,15 @@
 
                 <Grid.RowDefinitions>
                     <RowDefinition Height="1*"></RowDefinition>
-                    <RowDefinition Height="2*"></RowDefinition>
-                    <RowDefinition Height="0.5*"></RowDefinition>
+                    <RowDefinition Height="2.2*"></RowDefinition>
                 </Grid.RowDefinitions>
 
-                <Grid Grid.Row="0" Grid.Column="1" Background="#7358ad" Margin="15 0">
+                <Grid Grid.Row="0" Grid.Column="1" Background="#7358ad" Margin="18 0">
                     <Grid.Resources>
                         <Style TargetType="{x:Type Label}">
                             <Setter Property="Foreground" Value="#d8d8d8"></Setter>
                             <Setter Property="FontFamily" Value="Roboto"></Setter>
-                            <Setter Property="FontSize"   Value="30"></Setter>
+                            <Setter Property="FontSize"   Value="25"></Setter>
                             <Setter Property="VerticalAlignment" Value="Center"></Setter>
                             <Setter Property="HorizontalAlignment" Value="Center"></Setter>
                         </Style>
@@ -36,11 +35,12 @@
                         <Style TargetType="{x:Type TextBlock}">
                             <Setter Property="Foreground" Value="#d8d8d8"></Setter>
                             <Setter Property="FontFamily" Value="Roboto"></Setter>
-                            <Setter Property="Margin" Value="10 20 10 5"></Setter>
+                            <Setter Property="Margin" Value="13 13 13 5"></Setter>
                         </Style>
                     </Grid.Resources>
 
                     <TextBlock Text="{Binding Path=events}">
+
                     </TextBlock>
                 </Grid>
 
